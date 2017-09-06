@@ -25,7 +25,7 @@ function guess() {
         showReplay();
 }
     else if (getResults == false && attempt >= 10) { 
-        setMessage("You Lose! :(")
+        setMessage("You Lose! :(");
         showAnswer(false);
         showReplay();
 }
@@ -90,14 +90,15 @@ else{ return false};
 function showAnswer(usanswer){
 let code = getElementById("code");
 
-    code.innerHTML = answer;
+   
 
-    if (usanswer === true){
+    if (usanswer){
         code.class += " succes";
     }
-    else if(usanswer === false){
+    else {
         code.class += " failure";
     };
+ code.innerHTML = answer.value;
 
 };
 
