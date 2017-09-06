@@ -24,7 +24,7 @@ function guess() {
         showAnswer(true);
         showReplay();
 }
-    else if (attempt >= 10) { 
+    else if (results == false || attempt >= 10) { 
         setMessage("You Lose! :(");
         showAnswer(false);
         showReplay();
@@ -93,7 +93,7 @@ let code = document.getElementById("code");
    
 
     if (usanswer){
-        code.class += " succes";
+        code.class += " success";
     }
     else {
         code.class += " failure";
