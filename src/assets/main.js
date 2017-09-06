@@ -8,16 +8,16 @@ function guess() {
     if(answer.value == "" || attempt.value == "") 
     {
       solution();
-    }
+    };
 
     if(!validateInput(input.value)){
         return false;
     }
     else {
         attempt.value++;
-    }
+    };
 
-    let results = getResults(input);
+let results = getResults(input);
     if (getResults === true){ 
         setMessage("You Win! :)");
         showAnswer(true);
@@ -29,7 +29,7 @@ function guess() {
 }
     else {setMessage("Incorrect, try again.")};
     //add functionality to guess function here
-}
+};
 
 function setHiddenFields(0, 10000) {
   attempt.value = 0;
