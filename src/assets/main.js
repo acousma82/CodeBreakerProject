@@ -19,12 +19,12 @@ function guess() {
 
     let results = getResults(input);
 
-    if (getResults === true){ 
+    if (getResults == true){ 
         setMessage("You Win! :)");
         showAnswer(true);
         showReplay();
 }
-    else if (getResults === false && attempt >= 10){ setMessage("You Lose! :(")
+    else if (getResults == false && attempt >= 10){ setMessage("You Lose! :(")
         showAnswer(false);
         showReplay();
 }
