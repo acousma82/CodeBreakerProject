@@ -3,9 +3,9 @@ let attempt = document.getElementById('attempt');
 
 function guess() {
     let input = document.getElementById('user-guess');
-    let solution = setHiddenFields(0, 9999);
+    let solution = setHiddenFields(0, 10000);
     
-    if(answer == "" && attempt == 0) 
+    if(answer.value == "" || attempt.value == "") 
     {
      solution();
     }
@@ -32,9 +32,9 @@ function guess() {
 }
 
 function setHiddenFields(min, max) {
-  attempt = 0;
-  answer = Math.floor(Math.random() * (max - min) + min);
-  while (answer.length < 4) {answer = "0" + answer.toString() };
+  attempt.value = 0;
+  answer.value = Math.floor(Math.random() * (max - min) + min).toString;
+  while (answer.length < 4) {answer = "0" + answer() };
 
   return answer;
 }
