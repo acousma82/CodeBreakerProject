@@ -88,7 +88,7 @@ else{ return false};
 };
 
 function showAnswer(usanswer){
-let code = getElementById("code");
+let code = document.getElementById("code");
 
    
 
