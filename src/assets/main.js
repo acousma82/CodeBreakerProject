@@ -49,7 +49,7 @@ let mesSage = document.getElementById('message');
 
 function validateInput(userIn){
 
-if (userIn.length === 4){
+if (userIn.length == 4){
     return true
 }
 else {
@@ -62,7 +62,7 @@ else {
 function getResults (input){
 let html = '<div class="row"><span class="col-md-6">' + input + '</span><div class="col-md-6">';
 let results = document.getElementById('results');
-let correct;
+let correct = 0;;
 
 for(i = 0; i < input.length; i++)
     
@@ -80,7 +80,7 @@ for(i = 0; i < input.length; i++)
        html += '</div></div>';
        results.innerHTML += html;
 
-if (correct == 4){return true }
+if (correct == input.length){return true }
 
 else{ return false};
 
