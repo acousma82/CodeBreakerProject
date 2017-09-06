@@ -3,18 +3,18 @@ let attempt = document.getElementById('attempt');
 
 function guess() {
     let input = document.getElementById('user-guess');
-    let solution = setHiddenFields(0, 10000);
+    let solution = setHiddenFields;
     
     if(answer.value == "" || attempt.value == "") 
     {
-     solution();
+      solution();
     }
 
     if(!validateInput(input.value)){
         return false;
     }
-    else{
-        attempt++;
+    else {
+        attempt.value++;
     }
 
     let results = getResults(input);
@@ -31,9 +31,9 @@ function guess() {
     //add functionality to guess function here
 }
 
-function setHiddenFields(min, max) {
+function setHiddenFields(0, 10000) {
   attempt.value = 0;
-  answer.value = Math.floor(Math.random() * (max - min) + min).toString;
+  answer.value = Math.floor(Math.random() * (10000 - 0) + 0).toString;
   while (answer.length < 4) {answer = "0" + answer() };
 
   return answer;
