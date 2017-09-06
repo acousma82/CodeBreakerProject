@@ -93,10 +93,10 @@ let code = document.getElementById("code");
    
 
     if (usanswer){
-        code.class += " success";
+        code.className += " success";
     }
     else {
-        code.class += " failure";
+        code.className += " failure";
     };
  code.innerHTML = answer.value;
 
