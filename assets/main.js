@@ -1,5 +1,6 @@
 let answer = document.getElementById('answer');
 let attempt = document.getElementById('attempt');
+let correct = 0;
 
 function guess() {
     let input = document.getElementById('user-guess');
@@ -64,7 +65,7 @@ else {
 function getResults (input){
 let html = '<div class="row"><span class="col-md-6">' + input + '</span><div class="col-md-6">';
 let results = document.getElementById('results');
-let correct = 0;;
+
 
 for(i = 0; i < input.length; i++)
     
