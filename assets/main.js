@@ -67,11 +67,11 @@ let correct;
 for(i = 0; i < input.length; i++)
     
     {
-        if(input.charAt(i) == answer.charAt(i))
+        if(input.charAt(i) == answer.value.charAt(i))
         {
             html += '<span class="glyphicon glyphicon-ok"></span>';
             correct++;
-        } else if (answer.includes(input.charAt(i)) === true) {                  //index of bestimmt den index an dem der Wert in einem array vorkommt. 
+        } else if (answer.value.includes(input.charAt(i)) === true) {                  //index of bestimmt den index an dem der Wert in einem array vorkommt. 
             html += '<span class="glyphicon glyphicon-transfer"></span>';
         } else {
             html += '<span class="glyphicon glyphicon-remove"></span>';
