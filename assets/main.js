@@ -17,14 +17,14 @@ function guess() {
         attempt.value++;
     };
 
-    let results = getResults(input);
+    let results = getResults(input.value);
 
-    if (getResults == true) { 
+    if (results) { 
         setMessage("You Win! :)");
-        showAnswer(true);
+        showAnswe(true);
         showReplay();
 }
-    else if (getResults == false && attempt >= 10) { 
+    else if (attempt >= 10) { 
         setMessage("You Lose! :(");
         showAnswer(false);
         showReplay();
